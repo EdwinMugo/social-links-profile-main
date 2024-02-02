@@ -73,6 +73,9 @@ img{
     background-color: var(--green);
     color: var(--off-black);
 }
+footer{
+    margin-top: 3rem;
+}
 /* media querry for larger screen size */
 @media screen and (min-width:650px){
     .container{
