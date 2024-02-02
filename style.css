@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root{
+/* Primary colors */
+    --green: hsl(75, 94%, 57%);
+
+/* Neutral */
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --dark-grey: hsl(0, 0%, 12%);
+    --off-black: hsl(0, 0%, 8%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+/* used flex to position everything on the page */
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    background-color: var(--off-black);
+    color: var(--white);
+    min-height: 100vh;  /* Ensure the body covers the full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+}
+.container{
+    border-radius: 10px;
+    background-color: var(--dark-grey);
+    width:85%;
+    text-align: center;
+    padding: 1.5rem;
+}
+img{
+    border-radius: 50%;
+    max-width: 30%;
+    min-width: 100px; /* Set the minimum width to 100px*/
+    height: auto;
+    margin-bottom: 1.5em;
+}
+.name-location p{
+    color: var( --green);
+    font-size: 18px;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+.tag-line p{
+    margin-bottom: 1.2rem;
+}
+.social-buttons{
+    display: flex;
+    flex-direction: column;
+    max-width: 95%;
+    margin: 0 auto;
+}
+ .btn{
+    background-color: var(--grey);
+    color: var(--white);
+    font-weight: 700;
+    font-size:16px;
+    padding: 1rem;
+    margin-bottom:1rem;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease;
+} 
+.btn:hover{
+    cursor: pointer; 
+    background-color: var(--green);
+    color: var(--off-black);
+}
+/* media querry for larger screen size */
+@media screen and (min-width:650px){
+    .container{
+        max-width: 500px; 
+    }
+}
